@@ -7,7 +7,7 @@ author = "Josh"
 feature_image = ""
 +++
 
-Hi! I'm an undergraduate at Yale University studying Mathematics and Economics. 
+Hi. I'm an undergraduate at Yale University studying Mathematics and Economics. 
 
 Processing Stochasticities is intended to allow me to capture my thoughts and academic experience in a way that is available to others for both scrutiny and (possibly) edification. Such is divided into [shortform](), where I host most of my treatments of papers and the like, and [longform](), where I keep longer treatments which are reserved only for those works which I feel merit the investment of my time.
 
