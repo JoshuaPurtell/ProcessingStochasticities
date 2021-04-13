@@ -19,14 +19,14 @@ name = "Projects"
 url = "/Projects/"
 weight = 10
 [[menu.main]]
-identifier = "Shortform"
-name = "Shortform"
-url = "/Shortform/"
+identifier = "Reading"
+name = "Reading"
+url = "/Reading/"
 weight = 10
 [[menu.main]]
-identifier = "Longform"
-name = "Longform"
-url = "/Longform/"
+identifier = "Write-Ups"
+name = "Write-Ups"
+url = "/Write-Ups/"
 weight = 10
 description = "Processing Stochasticities"
 facebook = ""
