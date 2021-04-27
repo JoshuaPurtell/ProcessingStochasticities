@@ -15,6 +15,8 @@ In case you'd like to learn a bit more about *me*, you can do so at a separate p
 
 If you'd like to get in contact to ideate or collaborate (on a project or paper), please do! Contact me @ josh dot purtell at yale dot edu or securely @ joshuampurtell at protonmail dot ch. If you get in touch via the latter address, please either do so using a *@protonmail.ch email account, or send your PGP key along with your first correspondence per [best practices](https://protonmail.com/support/knowledge-base/how-to-use-pgp/).
 
+Alternatively, you can set up a 30 minute conversation with me [here](https://calendly.com/josh-purtell/brief-introduction). 
+
 N.B. Processing Stochasticities is currently in build 0.2.0. This means that it is in a state of active development and is liable to breakage. If you notice any such breakage, please check the current [build plan](https://github.com/JoshuaPurtell/webpage/issues/1) and then generate a new [issue](https://github.com/JoshuaPurtell/webpage/issues) if you think it could be in my blind spot.
 
 
