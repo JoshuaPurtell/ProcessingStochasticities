@@ -1,11 +1,11 @@
 +++
  author = "Anonymous"
  title = "WRITE-UP On Spectral Clustering Analysis And An Algorithm"
- date = 2021-01-29
+ date = 2021-04-28
 +++
 
-
-
+label:writeups
+SAFE2PUBLISH
 
 See [On Spectral Clustering Analysis and an Algorithm](https://www.processingstochasticites.com/obsidian_port/writeups/On_Spectral_Clustering_Analysis_And_An_Algorithm/): 
 link [here](https://papers.nips.cc/paper/2092-on-spectral-clustering-analysis-and-an-algorithm.pdf).
