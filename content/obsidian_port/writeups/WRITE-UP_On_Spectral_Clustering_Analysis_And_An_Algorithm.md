@@ -60,4 +60,4 @@ On the the theory and methods side of things, Prop. 1 gives a somewhat trivial r
 
 
  
- <iframe seamless src="/obsidian_port/nodes/WRITE-UP_On_Spectral_Clustering_Analysis_And_An_Algorithm.html" style="width:700px; height:400px; border: 2px solid black"></iframe>
+ <iframe seamless src="/obsidian_port/writeups/nodes/WRITE-UP_On_Spectral_Clustering_Analysis_And_An_Algorithm.html" style="width:700px; height:400px; border: 2px solid black"></iframe>

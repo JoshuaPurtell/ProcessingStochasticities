@@ -69,4 +69,4 @@ References
 (3) https://pubmed.ncbi.nlm.nih.gov/27337136/
 (4) https://www.apa.org/monitor/julaug03/personality
  
- <iframe seamless src="/obsidian_port/nodes/WRITE-UP_Thesis_Proposal.html" style="width:700px; height:400px; border: 2px solid black"></iframe>
+ <iframe seamless src="/obsidian_port/writeups/nodes/WRITE-UP_Thesis_Proposal.html" style="width:700px; height:400px; border: 2px solid black"></iframe>

@@ -24,4 +24,4 @@ Terms which are not familiar upon first reading:
 
 
  
- <iframe seamless src="/obsidian_port/nodes/Action_And_Perception_As_Divergence_Minimization.html" style="width:700px; height:400px; border: 2px solid black"></iframe>
+ <iframe seamless src="/obsidian_port/reading/nodes/Action_And_Perception_As_Divergence_Minimization.html" style="width:700px; height:400px; border: 2px solid black"></iframe>
