@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "Action And Perception As Divergence Minimization"
- date = 2021-04-28
+ date = 2021-05-11
 +++
 
 
@@ -19,7 +19,7 @@ Terms which are not familiar upon first reading:
 [KL control](https://www.processingstochasticites.com/obsidian_port/reading/KL_Control/)
 [variational free energy](https://www.processingstochasticites.com/obsidian_port/reading/Variational_Free_Energy/)
 
-([Pollard](https://www.processingstochasticites.com/obsidian_port/reading/Pollard/) would hate them for this: "We use integrals here, as used for random variables that take on continuous values.")
+([A User's Guide to Measure Theoretic Probability](https://www.processingstochasticites.com/obsidian_port/reading/A_Users_Guide_To_Measure_Theoretic_Probability/) would hate them for this: "We use integrals here, as used for random variables that take on continuous values.")
 
 
 
