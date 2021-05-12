@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "Action And Perception As Divergence Minimization"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 

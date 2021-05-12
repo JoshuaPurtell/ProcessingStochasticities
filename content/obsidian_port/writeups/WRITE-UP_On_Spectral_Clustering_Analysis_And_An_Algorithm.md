@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "WRITE-UP On Spectral Clustering Analysis And An Algorithm"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 label:writeups
@@ -10,7 +10,7 @@ SAFE2PUBLISH
 See [On Spectral Clustering Analysis and an Algorithm](https://www.processingstochasticites.com/obsidian_port/writeups/On_Spectral_Clustering_Analysis_And_An_Algorithm/): 
 link [here](https://papers.nips.cc/paper/2092-on-spectral-clustering-analysis-and-an-algorithm.pdf).
 
-The main conceit of this paper is to cast data $S$ into a normalized affinity space (where affinity decays according to some hyperparameter $\sigma^2$ such that $A_{ij}=e^{\frac{-\left\lVert s_i-s_j \right\rVert^2}{2\sigma^2}}$). One does this by constructing $X=[x_1,...,x_k]$ where $x_i$ is the $i^{th}$ eigenvector of $L=D^{-\frac{1}{2}} A D^{-\frac{1}{2}}$, normalizing row norm to 1, and clustering in the ambient space $Y$.
+The main conceit of this paper is to cast data $S$ into a normalized affinity space (where affinity decays according to some hyperparameter $\sigma^2$ such that $A\_{ij}=e^{\frac{-\left\lVert s\_i-s\_j \right\rVert^2}{2\sigma^2}}$). One does this by constructing $X=[x\_1,...,x\_k]$ where $x\_i$ is the $i^{th}$ eigenvector of $L=D^{-\frac{1}{2}} A D^{-\frac{1}{2}}$, normalizing row norm to 1, and clustering in the ambient space $Y$.
 
 In terms of performance, the algorithm seems to perform well enough for the first trivial non-convex clustering that I tried, concentric circles (this isn't very original — Ng et al use it in the paper).
 
@@ -39,9 +39,9 @@ For those wishing to implement Ng's algorithm with knn, the above implementation
 
 Which provides a natural segue back to the paper; Ng et al recommend selecting a $\sigma^2$ value by minimizing the induced cluster "tightness." They don't offer a specific approach to doing so, but my guess is that such an algorithm would solve a relaxation of the following optimization problem:
 
-$$\min\_{\sigma^2} \max\_i(\ell) \text{ s. t. }\ell\_i = k\_{Ch}(C\_i)$$ where $k\_{Ch}(C\_i)$ is the Cheegar constant of cluster $C\_i$.
+$$\min\_{\sigma^2} \max\_i(\ell) \text{ s. t. }\ell\_i = k\_{Ch}(C\_i)$$ where $k\\_{Ch}(C\\_i)$ is the Cheegar constant of cluster $C\\_i$.
 
-Of course, finding the Cheegar constant is an NP-hard problem (classically), so this doesn't exactly make for the fastest-converging approach. Alternatively, Ng suggests that simply bounding the mixing time from above ought to equivalently induce the relaxed condition; such a bound can be applied via an upper bound on the second eigenvalue of the transition matrix corresponding to $A$, $M$ ($M\_{ij}=\frac{2\sigma^2}{A\_{ij}}, \forall i \neq j; M\_{ii}=0$). That is, by solving:
+Of course, finding the Cheegar constant is an NP-hard problem (classically), so this doesn't exactly make for the fastest-converging approach. Alternatively, Ng suggests that simply bounding the mixing time from above ought to equivalently induce the relaxed condition; such a bound can be applied via an upper bound on the second eigenvalue of the transition matrix corresponding to $A$, $M$ ($M\\_{ij}=\frac{2\sigma^2}{A\\_{ij}}, \forall i \neq j; M\\_{ii}=0$). That is, by solving:
 
 $$\min\_{\sigma^2} \max\_i(\ell) \text{ s. t. } \ell\_i = \lambda^{M^i}\_2, M^i \text{ is the transition matrix for cluster }i$$ 
 

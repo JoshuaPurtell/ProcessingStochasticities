@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "Endogenous Risk Attitudes"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 label:writeups
@@ -11,7 +11,7 @@ Scale in the Fly's Eye
 Does Encoding Affect Behavior?
 Netzer '09, Robson '01
 
-For stochastic measurement, we can either guess that input is stochastic and measurement true, or input constant and measurement error-prone. Finds $E[m^-1(x)]$ vs $m^-1(E(x))$
+For stochastic measurement, we can either guess that input is stochastic and measurement true, or input constant and measurement error-prone. Finds $E[m^{-1}(x)]$ vs $m^{-1}(E(x))$
 $m$ increasing and therefore invertible
 
 [Psychophysics](https://www.processingstochasticites.com/obsidian_port/writeups/Psychophysics/) rationale for s-shaped utility, encoding of stimuli.
@@ -25,10 +25,10 @@ Decision problem: lottery vs safe option (observation of probabilities and s, fr
 Encoding function, sampling frequencies. Encoding function is noisy, use MLE/Bayesian over encoded data to guess true vector. Look at nearly complete information ($n \to \infty$), whereupon Bayesian/MLE equate.
 
 Ex Ante Optimization
-$\min L(n) = \mathbb{E}[\max\{r,s\} - 1_{q_n>s}r - 1_{q_n \leq s}s$
+$\min L(n) = \mathbb{E}[\max\{r,s\} - 1\_{q\_n>s}r - 1\_{q\_n \leq s}s]$
 
 Theorem (Limit Loss)
-Under a regularity condition, loss grows like 1/n and which acts as expectation over MSE conditional on tie (condition because perception errors small) (MSE because distortion only occurs if s occurs between r and $q_n$, prob of choice distortion and loss both related to error, so total loss related to square of error)
+Under a regularity condition, loss grows like 1/n and which acts as expectation over MSE conditional on tie (condition because perception errors small) (MSE because distortion only occurs if s occurs between r and $q\_n$, prob of choice distortion and loss both related to error, so total loss related to square of error)
 
 [Dominated Convergence](https://www.processingstochasticites.com/obsidian_port/writeups/Dominated_Convergence/)
 

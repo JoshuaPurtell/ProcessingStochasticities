@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "Jie Bai Frictions Talk"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 label:writeups

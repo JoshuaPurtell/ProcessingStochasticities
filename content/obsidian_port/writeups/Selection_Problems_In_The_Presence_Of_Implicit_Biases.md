@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "Selection Problems In The Presence Of Implicit Biases"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 label:writeups
@@ -22,7 +22,7 @@ Generalized Rooney rule: require at least $l \geq 1$ candidates from group to be
 Long-term impact of Rooney rule.
 
 Dynamic system: 
-evidence against implicit bias $a^t>1$, $a^{(t+1)}:=a^t\frac{u_{latent}}{u_{observed}}$
+evidence against implicit bias $a^t>1$, $a^{(t+1)}:=a^t\frac{u\_{latent}}{u\_{observed}}$
 implicit bias is rv sampled from distribution
 
 Punchline is that implicit bias rapidly decays with Rooney rule.

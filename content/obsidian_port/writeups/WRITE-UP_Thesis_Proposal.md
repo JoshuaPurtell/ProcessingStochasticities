@@ -1,14 +1,14 @@
 +++
  author = "Anonymous"
  title = "WRITE-UP Thesis Proposal"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 
 
 
 # Introduction
-Generally speaking, success in work is determined by general intelligence and conscientiousness [1]. We can think of conscientiousness $C: \Pi \to \mathbb{R}$ as a factor characterizing the distribution over success which an agent can expect, given his emotional policy $\pi \in \Pi$ which takes an agent's history and generates a behavior; for simplicity's sake, we can for the sake of argument associate $C_g(\pi)$ with the median of the success distribution induced by $\pi$, for an agent with fixed intelligence $g$.
+Generally speaking, success in work is determined by general intelligence and conscientiousness [1]. We can think of conscientiousness $C: \Pi \to \mathbb{R}$ as a factor characterizing the distribution over success which an agent can expect, given his emotional policy $\pi \in \Pi$ which takes an agent's history and generates a behavior; for simplicity's sake, we can for the sake of argument associate $C\_g(\pi)$ with the median of the success distribution induced by $\pi$, for an agent with fixed intelligence $g$.
 
 While there is a genetic component to $C$ (apparently anti-correlated [2] with $g$, as one would expect given [Berkson's Law](https://www.processingstochasticites.com/obsidian_port/writeups/Berksons_Law/)), there is a significant environmental factor (around 50% [3]). Furthermore, conscientiousness changes over an individual's lifetime, often for the better [4].
 
@@ -23,29 +23,29 @@ I seek to use evolutionary game theory to demonstate a plausible mechanism by wh
 # Formalism
 
 ## Model
-We represent the community of agents by $\mathcal{A}$ and a discrete status function $s: \mathcal{A} \to [0,1]$ for which $\sum_{A\in \mathcal{A}} s(A) = 1$.
+We represent the community of agents by $\mathcal{A}$ and a discrete status function $s: \mathcal{A} \to [0,1]$ for which $\sum\_{A\in \mathcal{A}} s(A) = 1$.
 
-We assume that one's emotional policy can only be lossily inferred by others; specifically, one's current "real" conscientiousness ($C_t$) is noisily encoded by others as $C_t'$ according to the function $C\_{A\in \mathcal{A}}$
+We assume that one's emotional policy can only be lossily inferred by others; specifically, one's current "real" conscientiousness ($C\_t$) is noisily encoded by others as $C\_t'$ according to the function $C\_t' = C\_{t-s} + \epsilon, \epsilon \sim N(0,\sigma\_C)$, where $s$ is some delay factor. 
 
-We assume that general intelligence in the population is distributed according to $g \sim N(\mu_g,\sigma_g)$ and is fixed over a lifetime.
+We assume that general intelligence in the population is distributed according to $g \sim N(\mu\_g,\sigma\_g)$ and is fixed over a lifetime.
 
-We assume that each agent $A \in \mathcal{A}$ generates resources $r^A_t$ the following production function: $r^A_t = \alpha g^{\beta} C_t^{1-\beta}$, where $\alpha,\beta \in (0,1)$ and $\alpha$ is a one-off self-imposed handicap.
+We assume that each agent $A \in \mathcal{A}$ generates resources $r^A\_t$ the following production function: $r^A\_t = \alpha g^{\beta} C\_t^{1-\beta}$, where $\alpha,\beta \in (0,1)$ and $\alpha$ is a one-off self-imposed handicap.
 
 In each period, an agent can devote resources to up to two things: 
 
 (1) Investing:
 
-The agent has long-term wealth $w$ which is a store of resources, and can invest up to $r^A_t - B/n$ in a given time period (the rest is used communally).
+The agent has long-term wealth $w$ which is a store of resources, and can invest up to $r^A\_t - B/n$ in a given time period (the rest is used communally).
 
 (2) Challenging the current hierarchy:
 
-The agent can attempt to induce a new status function $s'$, whereupon he succeeds with probability $p = w\delta/\sum_{A} |s'(A)-s(A)|^2$ (where $\delta$ is an appropriate scale factor) and dies otherwise.
+The agent can attempt to induce a new status function $s'$, whereupon he succeeds with probability $p = w\delta/\sum\_{A} |s'(A)-s(A)|^2$ (where $\delta$ is an appropriate scale factor) and dies otherwise.
 
 He also chooses the handicap $\alpha$ every period.
 
-Each period, if $\sum_{A \in \mathcal{A}} r^A_t < B$, each agent dies with probability $1-\sum_{A \in \mathcal{A}} r^A_t/B$.
+Each period, if $\sum\_{A \in \mathcal{A}} r^A\_t < B$, each agent dies with probability $1-\sum\_{A \in \mathcal{A}} r^A\_t/B$.
 
-Each agent lives for $T$ periods unless killed. Whenever an agent dies, a new agent is created whose emotional policy $\pi$ is given by a RV using $s$ as a density on $\{\pi_A, A \in \mathcal{A}\}$. 
+Each agent lives for $T$ periods unless killed. Whenever an agent dies, a new agent is created whose emotional policy $\pi$ is given by a RV using $s$ as a density on $\{\pi\_A, A \in \mathcal{A}\}$. 
 
 We say that an agent can have an executive strategy $\rho$ over his per-period choice of $\alpha$ and his choice to induce a new status function.
 # Theorems

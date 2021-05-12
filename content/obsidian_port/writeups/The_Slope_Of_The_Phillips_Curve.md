@@ -1,7 +1,7 @@
 +++
  author = "Anonymous"
  title = "The Slope Of The Phillips Curve"
- date = 2021-05-11
+ date = 2021-05-12
 +++
 
 label:writeups
@@ -24,7 +24,7 @@ When equation is decomposed to transitory and permannet components, permanent ca
 
 AR(1) process
 
-$\pi_t = - \psi u_t + E_t\pi_{t+\infty}+\omega_t$
+$\pi\_t = - \psi u\_t + E\_t\pi\_{t+\infty}+\omega\_t$
 
 Imperfectly credible 
 
