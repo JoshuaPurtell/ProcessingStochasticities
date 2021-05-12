@@ -25,7 +25,7 @@ I seek to use evolutionary game theory to demonstate a plausible mechanism by wh
 ## Model
 We represent the community of agents by $\mathcal{A}$ and a discrete status function $s: \mathcal{A} \to [0,1]$ for which $\sum_{A\in \mathcal{A}} s(A) = 1$.
 
-We assume that one's emotional policy can only be lossily inferred by others; specifically, one's current "real" conscientiousness ($C_t$) is noisily encoded by others as $C_t'$ according to the function $C_t^{1-\beta}$
+We assume that one's emotional policy can only be lossily inferred by others; specifically, one's current "real" conscientiousness ($C_t$) is noisily encoded by others as $C_t'$ according to the function $C_{1-\beta}$
 
 We assume that general intelligence in the population is distributed according to $g \sim N(\mu_g,\sigma_g)$ and is fixed over a lifetime.
 
