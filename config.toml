@@ -59,6 +59,7 @@ disqusShortname = "stochasticprocesses"
 [markup.goldmark.renderer]
 unsafe= true
 katex= true
+mathmode=true
 
 [params]
   mainSections = ["post"]
