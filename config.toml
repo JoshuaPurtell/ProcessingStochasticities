@@ -28,7 +28,7 @@ facebook = ""
 github = "https://github.com/joshuapurtell"
 logo = "/images/test_logo.png"
 mainSections = ["math", "post"]
-twitter = "https://twitter.com/quantumwitty"
+twitter = "https://twitter.com/JoshPurtell"
 [privacy.instagram]
 disabled = false
 simple = true
